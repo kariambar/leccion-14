@@ -2,48 +2,58 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 	<title> Formulario de datos </title>
 	<style type="text/css">
 	body{
-	background-color: #C70039;
+	background-image: url("fondo3.jpg");
 	text-align: center;
-	font-family: helvetica;
+	font-family: 'Oxygen', sans-serif;
 	color: #FFFFFF;
-	line-height: 35px;
+	line-height: 25px;
+	margin-top: 60px;
 }
 	</style>
 </head>
 <body>
 
 <h1>Formulario de datos</h1>
-<from action="formulario">
-
-	<label for="nombre">Nombre </label> <br/> 
-	<input type="Escribe tu nombre" name="nombre" tittle="nombre" required>
+<form action="" >
+<p>
+	<label for="nm">Nombre </label> <br/> 
+	<input tittle="Escribe tu nombre" type="text" name="nombre" required/>
+	<br/>
+</p>
+<p>		 
+	<label for="ap">Apellido </label> <br/> 
+	<input tittle="Escribe tu apellido" type="text" name="apellido" required/>
+	<br/>
+</p>
+<p>		 
+	<label for="fono">Teléfono </label> <br/> 
+	<input tittle="Escribe tu telefono" type="text" name="telefono"  required/>
 	<br/> 
-	<label for="apellido">Apellido </label> <br/> 
-	<input type="Escribe tu apellido" name="apellido" tittle="apellido" required>
-	<br/> 
-	<label for="telefono">Telefono </label> <br/> 
-	<input type="Escribe tu telefono" name="telefono" tittle="telefono"  required>
-	<br/> 
+</p>
+<p>		
 	<label for="dropdown">Escoge tu carro </label><br> 
-	<select>
+	<select name="" required/>
 	  <option value="volvo">Volvo</option>
 	  <option value="saab">Saab</option>
 	  <option value="mercedes">Mercedes</option>
 	  <option value="audi">Audi</option>
 	</select>
 	<br/>
-
+</p>
+<p>	
 	<label for="em">Ingresa tu Email </label> <br/> 
-	<input type="Se necesita un email" tittle="email" name="email" required>
+	<input tittle ="Se necesita un email" type="email" name="email" required/>
 	<br/> 
 	<label for="pw">Contraseña </label><br>
-	<input type="password" name="pw" pattern=".{6,}" tittle="6 o más caracteres" required>
+	<input tittle="password" type="text"  name="password" pattern=".{6,}" tittle="6 o más caracteres" required/>
 	<br/> 
 	<input type="submit" name="Enviar" value="send"/>
-</from>
+</p>		
+</form>
 
 
 <script type="text/javascript" src="assets/js/javascript.js"></script>
